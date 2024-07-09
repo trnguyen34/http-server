@@ -60,7 +60,7 @@ typedef struct ThreadObj {
 
 typedef ThreadObj *Thread;
 
-void aduit_log(char *method, char *path, uint16_t status_code, int request_id) {
+void aduit_log(const char *method, const char *path, uint16_t status_code, int request_id) {
     fprintf(stderr, "%s,/%s,%u,%d\n", method, path, status_code, request_id);
 }
 
