@@ -20,7 +20,7 @@ $(EXECBIN): $(OBJECTS) $(LIBRARY)
 	$(CC) $(CFLAGS) -c $<
 
 clean:
-	rm -f $(EXECBIN) $(OBJECTS)
+	rm -f $(EXECBIN) $(OBJECTS) *.txt
 
 nuke: clean
 	rm -rf .format
